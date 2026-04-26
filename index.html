@@ -3,105 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Interactivo - Edward Ramos Mostajo</title>
+    <title>Edward Ramos - CV Interactivo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .gradient-bg { background: linear-gradient(135deg, #1e293b 0%, #334155 100%); }
-        .card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .gradient-mining { background: linear-gradient(135deg, #1e293b 0%, #334155 100%); }
+        .card-shadow { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        /* Suaviza la transición en móviles */
+        * { -webkit-tap-highlight-color: transparent; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-slate-50 text-slate-900 pb-24 md:pb-0">
 
-    <header class="gradient-bg text-white py-16 px-6 text-center shadow-lg">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4 uppercase tracking-wide">Edward Ramos Mostajo</h1>
-        <p class="text-xl md:text-2xl font-light text-blue-300 mb-6">Magíster en Seguridad, Higiene Industrial y Salud Ocupacional | Ingeniero de Minas</p>
-        <div class="flex flex-wrap justify-center gap-6 text-sm md:text-base">
-            <span><i class="fas fa-envelope mr-2"></i>Edward476@gmail.com</span>
-            <span><i class="fas fa-phone mr-2"></i>952712410</span>
-            <span><i class="fas fa-map-marker-alt mr-2"></i>Cusco, Perú</span>
-            <span><i class="fas fa-id-card mr-2"></i>CIP: 272352 (Habilitado)</span>
+    <header class="gradient-mining text-white pt-12 pb-16 px-6 shadow-lg text-center relative">
+        <h1 class="text-3xl md:text-5xl font-bold mb-2 uppercase tracking-tight">Edward Ramos Mostajo</h1>
+        <p class="text-blue-400 font-medium text-sm md:text-xl mb-8 uppercase tracking-widest">Ingeniero de Minas | Especialista SSOMA</p>
+        
+        <div class="flex justify-center mb-4">
+            <a href="cv.pdf" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-xl shadow-2xl transition-all transform hover:scale-105 flex items-center gap-3 text-lg">
+                <i class="fas fa-file-pdf"></i>
+                DESCARGAR CV (PDF)
+            </a>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-2 text-[11px] md:text-sm opacity-90">
+            <span class="bg-white/10 px-3 py-1 rounded-full border border-white/20"><i class="fas fa-id-badge mr-1"></i> CIP: 272352</span>
+            <span class="bg-white/10 px-3 py-1 rounded-full border border-white/20"><i class="fas fa-car mr-1"></i> Licencia A-2a</span>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto py-12 px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <main class="max-w-4xl mx-auto -mt-8 p-4 space-y-6">
         
-        <aside class="md:col-span-1 space-y-8">
-            <section class="bg-white p-6 rounded-xl shadow-md border-t-4 border-blue-500">
-                <h2 class="text-2xl font-bold mb-4 text-blue-800"><i class="fas fa-user-tie mr-2"></i>Perfil</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    Ingeniero colegiado con sólida trayectoria en gestión integral de seguridad laboral y protección ambiental. Experto en matrices IPERC, análisis JHA y cultura de "cero accidentes".
-                </p>
-            </section>
+        <section class="bg-white p-6 rounded-2xl card-shadow border-t-4 border-blue-600">
+            <h2 class="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
+                <i class="fas fa-user-circle text-blue-600"></i> Perfil Profesional
+            </h2>
+            <p class="text-slate-600 leading-relaxed text-sm md:text-base">
+                Magíster en Seguridad e Higiene con sólida trayectoria en gestión de seguridad laboral y protección ambiental en operaciones mineras. Experto en matrices IPERC y liderazgo de equipos.
+            </p>
+        </section>
 
-            <section class="bg-white p-6 rounded-xl shadow-md border-t-4 border-blue-500">
-                <h2 class="text-2xl font-bold mb-4 text-blue-800"><i class="fas fa-tools mr-2"></i>Habilidades Técnicas</h2>
-                <ul class="space-y-2 text-gray-700">
-                    <li class="flex justify-between"><span>ISO 45001, 14001, 9001</span> <span class="text-blue-500">Líder</span></li>
-                    <li class="flex justify-between"><span>Power BI (Análisis Datos)</span> <span class="text-blue-500">Avanzado</span></li>
-                    <li class="flex justify-between"><span>AutoCAD</span> <span class="text-blue-500">Intermedio</span></li>
-                    <li class="flex justify-between"><span>S10 Costos</span> <span class="text-blue-500">Certificado</span></li>
-                    <li class="flex justify-between"><span>Inglés</span> <span class="text-blue-500">Intermedio</span></li>
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold text-slate-800 px-2 flex items-center gap-2">
+                <i class="fas fa-briefcase text-blue-600"></i> Experiencia Reciente
+            </h2>
+            
+            <div class="bg-white p-5 rounded-2xl card-shadow border-l-4 border-blue-600">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold text-slate-900">HUDBAY PERU SAC</h3>
+                        <p class="text-blue-600 text-sm font-semibold">Supervisor SSO</p>
+                    </div>
+                    <span class="text-[10px] bg-green-100 text-green-700 px-2 py-1 rounded-full font-bold">2024 - 2026</span>
+                </div>
+                <ul class="mt-3 text-sm text-slate-500 list-disc ml-4 space-y-2">
+                    <li>Gestión integral de riesgos y cero accidentes.</li>
+                    <li>Capacitación técnica de personal operativo.</li>
                 </ul>
-            </section>
-        </aside>
+            </div>
 
-        <div class="md:col-span-2 space-y-8">
-            <section>
-                <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b-2 border-gray-200 pb-2">Experiencia Profesional Reciente</h2>
-                
-                <div class="space-y-6">
-                    <div class="card bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-600">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-xl font-bold text-gray-800">Supervisor SSO</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">2024 - 2026</span>
-                        </div>
-                        <p class="text-blue-600 font-medium mb-3">HUDBAY PERU SAC</p>
-                        <p class="text-gray-600 mb-2">Liderazgo en inspecciones diarias y gestión integral de riesgos.</p>
-                        <ul class="list-disc list-inside text-sm text-gray-500 space-y-1">
-                            <li>Reducción significativa del índice de accidentes.</li>
-                            <li>100% de alcance en capacitación de personal.</li>
-                        </ul>
+            <div class="bg-white p-5 rounded-2xl card-shadow border-l-4 border-slate-400">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold text-slate-900 font-bold">C3METALS PERU SAC</h3>
+                        <p class="text-blue-600 text-sm font-semibold">Coordinador SSOMA</p>
                     </div>
-
-                    <div class="card bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-600">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-xl font-bold text-gray-800">Ingeniero SSOMAC</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">2024</span>
-                        </div>
-                        <p class="text-blue-600 font-medium mb-3">AK DRILLING INTERNATIONAL SA</p>
-                        <p class="text-gray-600">Reducción del 20% en accidentes de manos mediante nuevos procedimientos.</p>
-                    </div>
-
-                    <div class="card bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-600">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-xl font-bold text-gray-800">Coordinador SSOMA</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">2022 - 2023</span>
-                        </div>
-                        <p class="text-blue-600 font-medium mb-3">C3METALS PERU SAC</p>
-                        <p class="text-gray-600">Récord de cero accidentes graves en entornos remotos de exploración.</p>
-                    </div>
+                    <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-1 rounded-full font-bold">2022 - 2023</span>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section>
-                <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b-2 border-gray-200 pb-2">Formación Académica</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="bg-white p-4 rounded-lg shadow border border-gray-100">
-                        <h4 class="font-bold text-gray-800">Maestría en Seguridad e Higiene</h4>
-                        <p class="text-sm text-gray-500">Univ. Católica de Trujillo</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg shadow border border-gray-100">
-                        <h4 class="font-bold text-gray-800">Ingeniería de Minas</h4>
-                        <p class="text-sm text-gray-500">UNSAAC - Cusco</p>
-                    </div>
+        <section class="bg-white p-6 rounded-2xl card-shadow">
+            <h2 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+                <i class="fas fa-graduation-cap text-blue-600"></i> Formación
+            </h2>
+            <div class="space-y-3">
+                <div class="border-l-2 border-slate-100 pl-4">
+                    <p class="font-bold text-sm">Maestría en Seguridad e Higiene</p>
+                    <p class="text-xs text-slate-500">Univ. Católica de Trujillo</p>
                 </div>
-            </section>
-        </div>
+                <div class="border-l-2 border-slate-100 pl-4">
+                    <p class="font-bold text-sm">Ingeniería de Minas</p>
+                    <p class="text-xs text-slate-500">UNSAAC - Cusco</p>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="bg-gray-800 text-white py-8 text-center mt-12">
-        <p>© 2026 Edward Ramos Mostajo - Profesional SSOMA</p>
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 p-3 flex justify-around items-center md:hidden shadow-[0_-5px_20px_rgba(0,0,0,0.1)] z-50">
+        <a href="tel:952712410" class="flex flex-col items-center text-slate-600">
+            <i class="fas fa-phone text-xl"></i>
+            <span class="text-[10px] mt-1 font-bold">Llamar</span>
+        </a>
+        <a href="cv.pdf" target="_blank" class="flex flex-col items-center text-red-600">
+            <i class="fas fa-file-pdf text-2xl"></i>
+            <span class="text-[10px] mt-1 font-bold uppercase">Mi PDF</span>
+        </a>
+        <a href="https://wa.me/51952712410" class="flex flex-col items-center text-green-500">
+            <i class="fab fa-whatsapp text-2xl"></i>
+            <span class="text-[10px] mt-1 font-bold text-green-600">WhatsApp</span>
+        </a>
+    </nav>
+
+    <footer class="text-center py-8 text-slate-400 text-xs">
+        <p>© 2026 Edward Ramos Mostajo</p>
     </footer>
 
 </body>
